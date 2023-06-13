@@ -9,7 +9,4 @@ public interface ChunkTicketAccessor<T>
 {
     @Accessor
     T getArgument();
-
-    @Accessor
-    long getTickCreated();
 }

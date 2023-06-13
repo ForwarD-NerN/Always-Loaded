@@ -4,9 +4,9 @@
   "package": "ru.nern.alwaysloaded.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "ChunkTicketAccessor",
     "ChunkTicketManagerAccessor",
-    "ServerChunkManagerAccessor",
-    "ChunkTicketAccessor"
+    "ServerChunkManagerAccessor"
   ],
   "injectors": {
     "defaultRequire": 1

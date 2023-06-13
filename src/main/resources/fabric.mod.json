@@ -4,12 +4,13 @@
   "version": "${version}",
 
   "name": "Always Loaded Mod",
-  "description": "Simple server-side fabric mod that allows portal chunk loaders to automatically restart after a server restart/leaving singleplayer.",
+  "description": "Allows chunk loaders to auto-restart after the server restarts",
   "authors": [
     "ForwarD NerN"
   ],
   "contact": {
-    "homepage": "https://www.curseforge.com/minecraft/mc-mods/always-loaded/"
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/always-loaded/",
+    "sources": "https://github.com/ForwarD-NerN/Always-Loaded"
   },
 
   "license": "CC0-1.0",
