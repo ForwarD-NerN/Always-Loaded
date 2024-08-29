@@ -40,6 +40,8 @@ public class DimensionTicketStorage {
         ServerChunkManager chunkManager = world.getChunkManager();
 
         for(String line : lines) {
+            if(line.isEmpty()) continue;
+
             String[] arguments = line.split(" ");
             BlockPos pos = new BlockPos(Integer.parseInt(arguments[0]), Integer.parseInt(arguments[1]), Integer.parseInt(arguments[2]));
 
