@@ -8,8 +8,7 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.gen.Accessor;
 
 @Mixin(ChunkTicketManager.class)
-public interface ChunkTicketManagerAccessor
-{
+public interface ChunkTicketManagerAccessor {
     @Accessor
     Long2ObjectOpenHashMap<SortedArraySet<ChunkTicket<?>>> getTicketsByPosition();
 }

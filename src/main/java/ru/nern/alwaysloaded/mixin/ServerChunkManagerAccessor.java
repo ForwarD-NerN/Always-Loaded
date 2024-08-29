@@ -6,8 +6,7 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.gen.Accessor;
 
 @Mixin(ServerChunkManager.class)
-public interface ServerChunkManagerAccessor
-{
+public interface ServerChunkManagerAccessor {
     @Accessor
     ChunkTicketManager getTicketManager();
 }
