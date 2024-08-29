@@ -26,8 +26,8 @@ import java.util.List;
 import static ru.nern.alwaysloaded.AlwaysLoaded.LOGGER;
 
 public class DimensionTicketStorage {
-    public final static String TICKETS_KEY = "tickets.saved";
-    public final static String OLD_TICKETS_KEY = "tickets.saved.old";
+    public static final String TICKETS_KEY = "tickets.saved";
+    public static final String OLD_TICKETS_KEY = "tickets.saved.old";
 
     public static void loadChunkTickets(ServerWorld world) throws IOException, NumberFormatException {
         File saveFile = getSaveLocation(world).resolve(TICKETS_KEY).toFile();
@@ -76,7 +76,7 @@ public class DimensionTicketStorage {
         }
 
         writer.close();
-        LOGGER.info("Saved {} ticket(s) in {}", savedTicketCount, world.getDimension().getType());
+        LOGGER.info("Saved {} chunk ticket(s) in {}", savedTicketCount, world.getDimension().getType());
     }
 
     private static void createSaveFileOrBackup(Path saveLocation) throws IOException {
