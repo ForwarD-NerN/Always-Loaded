@@ -2,20 +2,17 @@
   "schemaVersion": 1,
   "id": "alwaysloaded",
   "version": "${version}",
-
-  "name": "Always Loaded Mod",
-  "description": "Allows chunk loaders to auto-restart after the server restarts",
+  "name": "Always Loaded",
+  "description": "Allows portal chunk loaders to automatically restart after a server restart",
   "authors": [
     "ForwarD NerN"
   ],
   "contact": {
-    "homepage": "https://www.curseforge.com/minecraft/mc-mods/always-loaded/",
+    "homepage": "https://modrinth.com/mod/always-loaded",
     "sources": "https://github.com/ForwarD-NerN/Always-Loaded"
   },
-
-  "license": "CC0-1.0",
+  "license": "MIT",
   "icon": "assets/alwaysloaded/icon.png",
-
   "environment": "*",
   "entrypoints": {
     "main": [
@@ -25,9 +22,9 @@
   "mixins": [
     "alwaysloaded.mixins.json"
   ],
-
   "depends": {
-    "fabric": "*"
+    "fabric": "*",
+    "minecraft": ">=1.15 <1.17"
   },
   "suggests": {
     "another-mod": "*"
